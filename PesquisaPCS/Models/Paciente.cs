@@ -14,8 +14,12 @@ namespace PesquisaPCS.Models
         public string Nome { get; set; }
         public string Endereco { get; set; }
         public string Bairro { get; set; }
-        public int Idmunicipio_residencia { get; set; }
-        public enum Zona_residencia { Rural, Urbana}
+
+        //public int Idmunicipio_residencia { get; set; }
+        //[Column("Idmunicipio_residencia", TypeName = "ntext")]
+        public Municipio Residencia { get; set; }
+
+        public string Zona_residencia { get; set; }
         public char Sexo { get; set; }
 
         //especificar formato da data [25/04/2021]
@@ -26,5 +30,7 @@ namespace PesquisaPCS.Models
 
         [DataType(DataType.PhoneNumber)]
         public string Telefone { get; set; }
+
+        public ICollection<Ficha> Fichas { get; set; }
     }
 }

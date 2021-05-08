@@ -11,8 +11,9 @@ namespace PesquisaPCS.Models
     {
         [Key]
         public int Iddiagnostico { get; set; }
-        [Key]
         public string Sigla_diagnostico { get; set; }
         public string Descricao_diagnostico { get; set; }
+
+       
     }
 }

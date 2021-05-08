@@ -11,9 +11,11 @@ namespace PesquisaPCS.Models
     {
         [Key]
         public int Idficha { get; set; }
-        public int Idpaciente { get; set; }
+        //public int Idpaciente { get; set; }
+        public Paciente Paciente { get; set; }
         public int Idade { get; set; }
-        public int Idmunicipio_trabalha { get; set; }
+        //public int Idmunicipio_trabalha { get; set; }
+        public Municipio Trabalha { get; set; }
         public string Gestante { get; set; }
         public string Tabagismo { get; set; }
         public string Tabagismo_atual { get; set; }
@@ -117,7 +119,11 @@ namespace PesquisaPCS.Models
         public string Medicamento { get; set; }
         public string Remedio_micose { get; set; }
         public string Nome_remedio { get; set; }
-        public int Iddiagnostico { get; set; }
+        //public int Iddiagnostico { get; set; }
+        public Diagnostico Diagnostico { get; set; }
+
+        public ICollection<Ficha_Agro> Ficha_Agros { get; set; }
+
     }
 }
 

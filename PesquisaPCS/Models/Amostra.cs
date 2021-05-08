@@ -118,5 +118,6 @@ namespace PesquisaPCS.Models
         public string Medicamento_continuo { get; set; }
         public string Remedio_micose { get; set; }
         public string Sigla_diagnostico { get; set; }
+        
     }
 }
