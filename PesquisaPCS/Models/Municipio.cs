@@ -13,8 +13,7 @@ namespace PesquisaPCS.Models
         public int Idmunicipio { get; set; }
         public string Nome_municipio { get; set; }
 
-        public ICollection<Paciente> Pacientes { get; set; }
-        public ICollection<Ficha> Fichas { get; set; }
+        
 
 
     }
