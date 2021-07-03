@@ -15,9 +15,9 @@ namespace PesquisaPCS.Models
         public string Endereco { get; set; }
         public string Bairro { get; set; }
 
-        //public int Idmunicipio_residencia { get; set; }
-        //[Column("Idmunicipio_residencia", TypeName = "ntext")]
-        public Municipio Residencia { get; set; }
+        public int Idmunicipio_residencia { get; set; }
+       
+        public List<Municipio> Municipios { get; set; }
 
         public string Zona_residencia { get; set; }
         public char Sexo { get; set; }
@@ -31,6 +31,5 @@ namespace PesquisaPCS.Models
         [DataType(DataType.PhoneNumber)]
         public string Telefone { get; set; }
 
-        public ICollection<Ficha> Fichas { get; set; }
     }
 }
