@@ -11,10 +11,9 @@ namespace PesquisaPCS.Models
     {
         [Key]
         public int Idficha_agro { get; set; }
-        //public int Idficha { get; set; }
-        public Ficha FichaID { get; set; }
-        //public int Idproduto { get; set; }
-        public Agrotoxico ProdutoID { get; set; }
+        public int Idficha { get; set; }
+        public int Idproduto { get; set; }
+        
 
 
     }

@@ -15,7 +15,7 @@ namespace PesquisaPCS.Models
         public string Tipo_agrotoxico { get; set; }
         public string Principio_ativo { get; set; }
 
-        public ICollection<Ficha_Agro> Ficha_Agros  { get; set; }
+     
 
     }
 }
